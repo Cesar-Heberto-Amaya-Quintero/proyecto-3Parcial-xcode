@@ -12,8 +12,10 @@ class Materia {
     var asistenciaDia : Bool
     var faltas: String
     
-    init(nombre: String, tele: String) {
+    init(nombre: String, horario: String, asistenciaDia: Bool, faltas: String) {
         self.nombre = nombre
-        
+        self.horario = horario
+        self.asistenciaDia = asistenciaDia
+        self.faltas = faltas
     }
 }
