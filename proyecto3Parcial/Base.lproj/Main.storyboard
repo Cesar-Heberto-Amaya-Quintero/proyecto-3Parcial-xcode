@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="940" y="498"/>
         </scene>
-        <!--View Controller-->
+        <!--Alumno Controller-->
         <scene sceneID="rHV-Rz-OXa">
             <objects>
-                <viewController id="gY8-wP-s1I" sceneMemberID="viewController">
+                <viewController id="gY8-wP-s1I" customClass="AlumnoController" customModule="proyecto3Parcial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Il-dV-PdT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,6 +213,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="rGl-R2-Fee"/>
+                    <connections>
+                        <outlet property="imgFoto" destination="cru-uZ-joI" id="a2f-SR-FDR"/>
+                        <outlet property="lblMatricula" destination="SPC-eo-19p" id="dHG-1N-GDy"/>
+                        <outlet property="lblNombre" destination="1HV-VU-x77" id="2ai-CB-Y3E"/>
+                        <outlet property="lblNombreContacto" destination="oem-Be-Hf7" id="rFn-Mq-cZ9"/>
+                        <outlet property="lblParentesco" destination="LeP-QX-XBy" id="MxW-Gh-1gz"/>
+                        <outlet property="lblTelefono1" destination="zS6-wf-Fqz" id="NlK-Rn-E39"/>
+                        <outlet property="lblTelefono2" destination="NKs-hC-Anm" id="owe-ub-w4A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZxT-jI-BGv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
