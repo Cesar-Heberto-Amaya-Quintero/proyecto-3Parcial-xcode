@@ -17,6 +17,7 @@
 		3DE08FD02911614B0011A7DB /* proyecto3ParcialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FCF2911614B0011A7DB /* proyecto3ParcialUITests.swift */; };
 		3DE08FDF291163E80011A7DB /* HorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FDE291163E80011A7DB /* HorarioController.swift */; };
 		3DE08FE2291165050011A7DB /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FE1291165050011A7DB /* Materia.swift */; };
+		FB7FB2EA29156231005DD39E /* ActualizarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FB2E929156231005DD39E /* ActualizarContactoController.swift */; };
 		FBF3ABBD291177C500600675 /* CeldaMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3ABBC291177C500600675 /* CeldaMateriaController.swift */; };
 		FBF3ABBF291180B500600675 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3ABBE291180B500600675 /* Alumno.swift */; };
 		FBF3ABC12911859300600675 /* AlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3ABC02911859300600675 /* AlumnoController.swift */; };
@@ -56,6 +57,7 @@
 		3DE08FD12911614B0011A7DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE08FDE291163E80011A7DB /* HorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioController.swift; sourceTree = "<group>"; };
 		3DE08FE1291165050011A7DB /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		FB7FB2E929156231005DD39E /* ActualizarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarContactoController.swift; sourceTree = "<group>"; };
 		FBF3ABBC291177C500600675 /* CeldaMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateriaController.swift; sourceTree = "<group>"; };
 		FBF3ABBE291180B500600675 /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		FBF3ABC02911859300600675 /* AlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				3DE08FDE291163E80011A7DB /* HorarioController.swift */,
 				FBF3ABBC291177C500600675 /* CeldaMateriaController.swift */,
 				FBF3ABC02911859300600675 /* AlumnoController.swift */,
+				FB7FB2E929156231005DD39E /* ActualizarContactoController.swift */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				FBF3ABBD291177C500600675 /* CeldaMateriaController.swift in Sources */,
 				3DE08FDF291163E80011A7DB /* HorarioController.swift in Sources */,
 				3DE08FB0291161470011A7DB /* SceneDelegate.swift in Sources */,
+				FB7FB2EA29156231005DD39E /* ActualizarContactoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
