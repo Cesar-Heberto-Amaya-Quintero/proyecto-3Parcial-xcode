@@ -10,4 +10,13 @@ import UIKit
 
 class CeldaComidaController: UICollectionViewCell  {
     
+    @IBOutlet weak var lblNombre: UILabel!
+    @IBOutlet weak var imgComida: UIImageView!
+    @IBOutlet weak var lblPrecio: UILabel!
+    @IBOutlet weak var lblRate: UILabel!
+    
+    
+    @IBOutlet weak var mascara: UIView!
+    
+    @IBOutlet weak var sombra: UIView!
 }

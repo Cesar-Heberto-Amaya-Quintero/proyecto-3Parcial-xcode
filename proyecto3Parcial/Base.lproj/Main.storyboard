@@ -92,7 +92,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Menú Cafetería"/>
                                 <connections>
-                                    <segue destination="Eg9-2Z-3gI" kind="show" id="NT3-TR-8H1"/>
+                                    <segue destination="Eg9-2Z-3gI" kind="show" identifier="menuCafeteria" id="NT3-TR-8H1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 de noviembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybg-BY-zaN">
@@ -110,7 +110,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="pYt-YG-BT6">
                             <imageReference key="image" image="person.fill" catalog="system" variableValue="0.0"/>
                             <connections>
-                                <segue destination="gY8-wP-s1I" kind="show" id="esv-1L-Afh"/>
+                                <segue destination="gY8-wP-s1I" kind="show" identifier="infoAlumno" id="esv-1L-Afh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -135,16 +135,16 @@
             </objects>
             <point key="canvasLocation" x="953" y="1187"/>
         </scene>
-        <!--View Controller-->
+        <!--Menú-->
         <scene sceneID="gpG-2W-Uub">
             <objects>
-                <viewController id="Eg9-2Z-3gI" sceneMemberID="viewController">
+                <viewController id="Eg9-2Z-3gI" customClass="ComidaController" customModule="proyecto3Parcial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5LG-II-0Bj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b8G-Af-gfT">
-                                <rect key="frame" x="16" y="93" width="343" height="685"/>
+                                <rect key="frame" x="16" y="91" width="359" height="685"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kYe-FJ-XiH">
@@ -155,23 +155,35 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celdaComida" id="03h-nx-guP" customClass="CeldaComidaController" customModule="proyecto3Parcial" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="165" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="210"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fpS-P8-QZF">
-                                            <rect key="frame" x="0.0" y="0.0" width="165" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="210"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKc-K0-3Dk">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nKc-K0-3Dk">
                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-4h-k52">
-                                                    <rect key="frame" x="8" y="132" width="149" height="21"/>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgZ-FD-QES">
+                                                    <rect key="frame" x="0.0" y="128" width="165" height="74"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <color key="backgroundColor" red="1" green="0.97627657649999999" blue="0.91814285520000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCu-Jt-goE">
+                                                    <rect key="frame" x="28" y="114" width="109" height="53"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUX-4h-k52">
+                                                            <rect key="frame" x="-20" y="20" width="149" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.97627657649999999" blue="0.91814285520000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Precio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ww-zo-VmM">
                                                     <rect key="frame" x="15" y="175" width="65" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -198,38 +210,49 @@
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="165" height="200"/>
+                                        <size key="customSize" width="165" height="210"/>
+                                        <connections>
+                                            <outlet property="imgComida" destination="nKc-K0-3Dk" id="tcj-XM-knf"/>
+                                            <outlet property="lblNombre" destination="pUX-4h-k52" id="o3X-iG-oh8"/>
+                                            <outlet property="lblPrecio" destination="2Ww-zo-VmM" id="8AN-rl-j07"/>
+                                            <outlet property="lblRate" destination="S2u-nG-NKh" id="F3t-TC-Dt6"/>
+                                            <outlet property="mascara" destination="cCu-Jt-goE" id="W73-ls-j8h"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Eg9-2Z-3gI" id="T9p-gD-Cpq"/>
+                                    <outlet property="delegate" destination="Eg9-2Z-3gI" id="C9W-c1-uhW"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sjx-No-Wyd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mBG-PH-fva"/>
+                    <navigationItem key="navigationItem" title="Menú" style="editor" id="mBG-PH-fva"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dh0-es-mA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="-331"/>
+            <point key="canvasLocation" x="952.79999999999995" y="-331.0344827586207"/>
         </scene>
         <!--Pagos-->
         <scene sceneID="ZD8-Ru-RPk">
             <objects>
-                <viewController id="Ob5-mu-FnP" sceneMemberID="viewController">
+                <viewController id="Ob5-mu-FnP" customClass="PagoController" customModule="proyecto3Parcial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jmy-y9-JP5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f0R-rA-2La">
-                                <rect key="frame" x="16" y="91" width="343" height="473"/>
+                                <rect key="frame" x="16" y="91" width="343" height="721"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="178" id="D5M-vm-pV2">
-                                        <rect key="frame" x="0.0" y="50" width="343" height="178"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaPago" rowHeight="224" id="D5M-vm-pV2" customClass="CeldaPagoController" customModule="proyecto3Parcial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D5M-vm-pV2" id="rSt-Bw-31t">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="178"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Semestre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxf-1X-DPF">
@@ -253,6 +276,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Importe a pagar:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKo-wD-GWc">
+                                                    <rect key="frame" x="20" y="167" width="135" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha limite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xt-L7-umQ">
                                                     <rect key="frame" x="179" y="110" width="164" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -267,7 +297,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre semestre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycc-sx-qVy">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Concepto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycc-sx-qVy">
                                                     <rect key="frame" x="108" y="72" width="235" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -281,7 +311,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Referencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3u-NI-icI">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3u-NI-icI">
                                                     <rect key="frame" x="179" y="133" width="164" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -293,10 +323,29 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" systemColor="systemGreenColor"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Importe a pagar:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fml-oP-eUj">
+                                                    <rect key="frame" x="179" y="167" width="144" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblConcepto" destination="Ycc-sx-qVy" id="Lzi-gt-mSN"/>
+                                            <outlet property="lblFecha" destination="N3u-NI-icI" id="8nP-WY-kMb"/>
+                                            <outlet property="lblImportePagar" destination="fml-oP-eUj" id="DHQ-uE-Dxr"/>
+                                            <outlet property="lblNombreSemestre" destination="lil-Py-5Dc" id="RHR-Df-YTe"/>
+                                            <outlet property="lblReferencia" destination="CAp-P7-2I3" id="Xkx-co-OqP"/>
+                                            <outlet property="pagado" destination="Gxc-9U-saq" id="n9m-tL-SuP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ob5-mu-FnP" id="HLv-p9-i4O"/>
+                                    <outlet property="delegate" destination="Ob5-mu-FnP" id="Xzy-yi-Ml8"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GH0-z8-I1a"/>
@@ -388,7 +437,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ob5-mu-FnP" kind="show" id="jxQ-S6-3W1"/>
+                                    <segue destination="Ob5-mu-FnP" kind="show" identifier="pagos" id="jxQ-S6-3W1"/>
                                 </connections>
                             </button>
                         </subviews>
