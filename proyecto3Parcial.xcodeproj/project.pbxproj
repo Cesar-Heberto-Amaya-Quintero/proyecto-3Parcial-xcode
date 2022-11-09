@@ -24,6 +24,7 @@
 		FB74AA58291AB49E00557B6C /* PagoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74AA57291AB49E00557B6C /* PagoController.swift */; };
 		FB74AA5A291AB58400557B6C /* CeldaPagoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74AA59291AB58400557B6C /* CeldaPagoController.swift */; };
 		FB7FB2EA29156231005DD39E /* ActualizarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FB2E929156231005DD39E /* ActualizarContactoController.swift */; };
+		FBDE188C291BF9500026859B /* MateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDE188B291BF9500026859B /* MateriaController.swift */; };
 		FBF3ABBD291177C500600675 /* CeldaMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3ABBC291177C500600675 /* CeldaMateriaController.swift */; };
 		FBF3ABBF291180B500600675 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3ABBE291180B500600675 /* Alumno.swift */; };
 		FBF3ABC12911859300600675 /* AlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3ABC02911859300600675 /* AlumnoController.swift */; };
@@ -70,6 +71,7 @@
 		FB74AA57291AB49E00557B6C /* PagoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoController.swift; sourceTree = "<group>"; };
 		FB74AA59291AB58400557B6C /* CeldaPagoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPagoController.swift; sourceTree = "<group>"; };
 		FB7FB2E929156231005DD39E /* ActualizarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarContactoController.swift; sourceTree = "<group>"; };
+		FBDE188B291BF9500026859B /* MateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaController.swift; sourceTree = "<group>"; };
 		FBF3ABBC291177C500600675 /* CeldaMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateriaController.swift; sourceTree = "<group>"; };
 		FBF3ABBE291180B500600675 /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		FBF3ABC02911859300600675 /* AlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				FB74AA53291A9E7C00557B6C /* ComidaController.swift */,
 				FB74AA57291AB49E00557B6C /* PagoController.swift */,
 				FB74AA59291AB58400557B6C /* CeldaPagoController.swift */,
+				FBDE188B291BF9500026859B /* MateriaController.swift */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				FB74AA58291AB49E00557B6C /* PagoController.swift in Sources */,
 				FB74AA56291AA44500557B6C /* Comida.swift in Sources */,
 				3DE08FE2291165050011A7DB /* Materia.swift in Sources */,
+				FBDE188C291BF9500026859B /* MateriaController.swift in Sources */,
 				FBF3ABBD291177C500600675 /* CeldaMateriaController.swift in Sources */,
 				3DE08FDF291163E80011A7DB /* HorarioController.swift in Sources */,
 				3DE08FB0291161470011A7DB /* SceneDelegate.swift in Sources */,

@@ -11,6 +11,8 @@ import UIKit
 class CeldaMateriaController: UITableViewCell {
     
     @IBOutlet weak var lblNombre: UILabel!
-    
     @IBOutlet weak var lblHorario: UILabel!
+    @IBOutlet weak var lblSalon: UILabel!
+    
+    @IBOutlet weak var asistencia: UIImageView!
 }
