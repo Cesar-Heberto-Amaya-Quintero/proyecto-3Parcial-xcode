@@ -17,6 +17,8 @@
 		3DE08FD02911614B0011A7DB /* proyecto3ParcialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FCF2911614B0011A7DB /* proyecto3ParcialUITests.swift */; };
 		3DE08FDF291163E80011A7DB /* HorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FDE291163E80011A7DB /* HorarioController.swift */; };
 		3DE08FE2291165050011A7DB /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FE1291165050011A7DB /* Materia.swift */; };
+		FB724C33291EA03B00865EC6 /* EvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB724C32291EA03B00865EC6 /* EvaluacionController.swift */; };
+		FB724C35291EA26500865EC6 /* CeldaEvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB724C34291EA26500865EC6 /* CeldaEvaluacionController.swift */; };
 		FB74503229199F8B00C31492 /* CeldaComidaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74503129199F8B00C31492 /* CeldaComidaController.swift */; };
 		FB74AA52291A998700557B6C /* Pago.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74AA51291A998700557B6C /* Pago.swift */; };
 		FB74AA54291A9E7C00557B6C /* ComidaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74AA53291A9E7C00557B6C /* ComidaController.swift */; };
@@ -64,6 +66,8 @@
 		3DE08FD12911614B0011A7DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE08FDE291163E80011A7DB /* HorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioController.swift; sourceTree = "<group>"; };
 		3DE08FE1291165050011A7DB /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		FB724C32291EA03B00865EC6 /* EvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionController.swift; sourceTree = "<group>"; };
+		FB724C34291EA26500865EC6 /* CeldaEvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaEvaluacionController.swift; sourceTree = "<group>"; };
 		FB74503129199F8B00C31492 /* CeldaComidaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaComidaController.swift; sourceTree = "<group>"; };
 		FB74AA51291A998700557B6C /* Pago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pago.swift; sourceTree = "<group>"; };
 		FB74AA53291A9E7C00557B6C /* ComidaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaController.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				FB74AA57291AB49E00557B6C /* PagoController.swift */,
 				FB74AA59291AB58400557B6C /* CeldaPagoController.swift */,
 				FBDE188B291BF9500026859B /* MateriaController.swift */,
+				FB724C32291EA03B00865EC6 /* EvaluacionController.swift */,
+				FB724C34291EA26500865EC6 /* CeldaEvaluacionController.swift */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
@@ -314,8 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB724C35291EA26500865EC6 /* CeldaEvaluacionController.swift in Sources */,
 				FBF3ABBF291180B500600675 /* Alumno.swift in Sources */,
 				FBF3ABC12911859300600675 /* AlumnoController.swift in Sources */,
+				FB724C33291EA03B00865EC6 /* EvaluacionController.swift in Sources */,
 				3DE08FB2291161470011A7DB /* ViewController.swift in Sources */,
 				3DE08FAE291161470011A7DB /* AppDelegate.swift in Sources */,
 				FB74503229199F8B00C31492 /* CeldaComidaController.swift in Sources */,

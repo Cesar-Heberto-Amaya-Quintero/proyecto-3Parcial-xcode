@@ -83,6 +83,9 @@ class HorarioController: UIViewController, UITableViewDelegate, UITableViewDataS
             let destino = segue.destination as! MateriaController
             destino.clase = materias[tvClases.indexPathForSelectedRow!.row]
             destino.callBackAsistencia = tomarAsistencia
+        } else if segue.identifier == "evaluacionDocente" {
+            let destino = segue.destination as! EvaluacionController
+            destino.materias = materias
         }
     }
     
