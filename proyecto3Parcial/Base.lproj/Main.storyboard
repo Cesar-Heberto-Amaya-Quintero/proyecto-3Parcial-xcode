@@ -231,6 +231,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Asistencia del día">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="doTapAsistencia:" destination="LfL-4O-row" eventType="touchUpInside" id="fRa-Zn-br5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comentario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lke-uw-7nc">
                                 <rect key="frame" x="123" y="492" width="128" height="21"/>

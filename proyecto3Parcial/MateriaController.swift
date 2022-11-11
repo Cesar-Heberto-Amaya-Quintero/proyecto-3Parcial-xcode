@@ -12,6 +12,8 @@ class MateriaController: UIViewController {
     
     var clase : Materia?
     
+    var callBackAsistencia : ((Materia) -> Void)?
+    
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblHorario: UILabel!
     @IBOutlet weak var lblFecha: UILabel!
@@ -89,5 +91,15 @@ class MateriaController: UIViewController {
             btnAsistencia.setTitle("Tomada", for: .normal)
             btnAsistencia.isEnabled = false
         }
+    }
+    
+    @IBAction func doTapAsistencia(_ sender: Any) {
+       
+        if callBackAsistencia != nil {
+            clase?.asistenciaDia = true
+            callBackAsistencia!(clase!)
+            self.navigationController?.popViewController(animated: true)
+        }
+    
     }
 }
