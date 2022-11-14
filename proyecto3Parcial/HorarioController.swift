@@ -21,8 +21,8 @@ class HorarioController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewDidLoad() {
         //INICIALIAZACION MATERIAS
-        materias.append(Materia(nombre: "Programación de Dispositivos Móviles", horario: "7:00 - 10:00 a.m.", asistenciaDia: false, faltas: "0", salon: "D5", maestro: "Emiliano Lopez", calificacionMaestro: "4", comentarioMaestro: "", fecha: "1 de nov"))
-        materias.append(Materia(nombre: "Mercadotecnia", horario: "10:00 - 11:00 a.m.", asistenciaDia: true, faltas: "0", salon: "A15", maestro: "Yuri", calificacionMaestro: "3", comentarioMaestro: "", fecha: "1 de nov"))
+        materias.append(Materia(nombre: "Programación de Dispositivos Móviles", horario: "7:00 - 10:00 a.m.", asistenciaDia: false, faltas: "0", salon: "D5", maestro: "Emiliano Lopez", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov"))
+        materias.append(Materia(nombre: "Mercadotecnia", horario: "10:00 - 11:00 a.m.", asistenciaDia: true, faltas: "0", salon: "A15", maestro: "Yuri", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov"))
         materias.append(Materia(nombre: "Tratamiento de la imagen", horario: "11:00 - 13:00 p.m.", asistenciaDia: false, faltas: "0", salon: "E5", maestro: "Omar Lopez", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov"))
         
         //INICIALIAZACION COMIDAS
@@ -83,6 +83,7 @@ class HorarioController: UIViewController, UITableViewDelegate, UITableViewDataS
             let destino = segue.destination as! MateriaController
             destino.clase = materias[tvClases.indexPathForSelectedRow!.row]
             destino.callBackAsistencia = tomarAsistencia
+            destino.callBackEvaluacion = tomarAsistencia
         } else if segue.identifier == "evaluacionDocente" {
             let destino = segue.destination as! EvaluacionController
             destino.materias = materias
