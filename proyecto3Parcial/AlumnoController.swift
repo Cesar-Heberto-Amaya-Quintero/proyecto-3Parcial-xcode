@@ -26,7 +26,8 @@ class AlumnoController: UIViewController {
         
         
         lblNombre.text = alumno?.nombre
-        imgFoto.layer.cornerRadius = 20
+        imgFoto.layer.cornerRadius = imgFoto.bounds.size.width / 2.0
+        //imgFoto.layer.cornerRadius = 50
         imgFoto.image = UIImage(named: alumno!.foto)
         lblMatricula.text = alumno?.matricula
         lblNombreContacto.text = alumno?.nombreContacto

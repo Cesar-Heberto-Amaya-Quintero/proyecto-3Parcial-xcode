@@ -32,7 +32,7 @@ class PagoController: UIViewController, UITableViewDelegate, UITableViewDataSour
         celda?.lblFecha.text = pagos![indexPath.row].fechaLimite
         
         if (pagos![indexPath.row].pagado == true){
-            celda?.pagado.tintColor = UIColor(red: 21/255, green: 194/255, blue: 67/255, alpha: 1)
+            celda?.pagado.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
         } else
         {
             celda?.pagado.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)

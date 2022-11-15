@@ -48,6 +48,9 @@ class MateriaController: UIViewController {
         lblMaestro.text = clase?.maestro
         txtComentario.text = clase?.comentarioMaestro
         
+        if clase?.evaluado == true {
+            txtComentario.isUserInteractionEnabled = false
+        }
         
         if (clase?.calificacionMaestro == "") {
             
@@ -62,38 +65,38 @@ class MateriaController: UIViewController {
         }
         
         if (clase?.calificacionMaestro == "1") {
-            rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            lblLeyenda.isHidden = true
+            rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            lblLeyenda.text = "Ya realizaste la evaluación"
         }
         
         if (clase?.calificacionMaestro == "2") {
-            rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate2.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            lblLeyenda.isHidden = true
+            rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate2.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            lblLeyenda.text = "Ya realizaste la evaluación"
         }
         
         if (clase?.calificacionMaestro == "3") {
-            rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate2.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate3.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            lblLeyenda.isHidden = true
+            rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate2.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate3.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            lblLeyenda.text = "Ya realizaste la evaluación"
         }
         
         if (clase?.calificacionMaestro == "4") {
-            rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate2.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate3.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate4.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            lblLeyenda.isHidden = true
+            rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate2.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate3.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate4.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            lblLeyenda.text = "Ya realizaste la evaluación"
         }
         
         if (clase?.calificacionMaestro == "5") {
-            rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate2.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate3.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate4.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            rate5.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-            lblLeyenda.isHidden = true
+            rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate2.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate3.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate4.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            rate5.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+            lblLeyenda.text = "Ya realizaste la evaluación"
         }
         
         if (clase?.comentarioMaestro == "") {
@@ -113,13 +116,15 @@ class MateriaController: UIViewController {
         if callBackAsistencia != nil {
             clase?.asistenciaDia = true
             callBackAsistencia!(clase!)
-            self.navigationController?.popViewController(animated: true)
+            btnAsistencia.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
+            btnAsistencia.isEnabled = false
         }
     
     }
     
+    
     @IBAction func doTapRate1(_ sender: Any) {
-        rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
+        rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
         rate2.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
         rate3.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
         rate4.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
@@ -129,8 +134,8 @@ class MateriaController: UIViewController {
     
     
     @IBAction func daTapRate2(_ sender: Any) {
-        rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate2.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
+        rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate2.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
         rate3.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
         rate4.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
         rate5.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
@@ -139,9 +144,9 @@ class MateriaController: UIViewController {
     
     
     @IBAction func doTapRate3(_ sender: Any) {
-        rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate2.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate3.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
+        rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate2.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate3.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
         rate4.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
         rate5.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
         calificacion = "3"
@@ -149,21 +154,21 @@ class MateriaController: UIViewController {
     
     
     @IBAction func doTapRate4(_ sender: Any) {
-        rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate2.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate3.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate4.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
+        rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate2.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate3.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate4.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
         rate5.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
         calificacion = "4"
     }
     
     
     @IBAction func doTapRate5(_ sender: Any) {
-        rate1.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate2.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate3.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate4.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
-        rate5.tintColor = UIColor(red: 255/255, green: 204/255, blue: 0/255, alpha: 1)
+        rate1.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate2.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate3.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate4.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
+        rate5.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
         calificacion = "5"
     }
     
@@ -171,6 +176,7 @@ class MateriaController: UIViewController {
     @IBAction func doTapEvaluar(_ sender: Any) {
         clase?.calificacionMaestro = calificacion
         clase?.comentarioMaestro = txtComentario.text!
+        clase?.evaluado = true
         callBackAsistencia!(clase!)
         self.navigationController?.popViewController(animated: true)
     }

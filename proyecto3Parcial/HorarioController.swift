@@ -17,13 +17,13 @@ class HorarioController: UIViewController, UITableViewDelegate, UITableViewDataS
     var comidas: [Comida] = []
     var pagos: [Pago] = []
     
-    var alumno: Alumno? = Alumno(nombre: "César Heberto Amaya Quintero",foto:"fotoPrueba", matricula: "199112", nombreContacto: "Heberto Amaya Licea", parentesco: "Padre", telefono1: "6449988999", telefono2: "6442014287")
+    var alumno: Alumno? = Alumno(nombre: "César Heberto Amaya Quintero",foto:"foto", matricula: "199112", nombreContacto: "Heberto Amaya Licea", parentesco: "Padre", telefono1: "6449988999", telefono2: "6442014287")
     
     override func viewDidLoad() {
         //INICIALIAZACION MATERIAS
-        materias.append(Materia(nombre: "Programación de Dispositivos Móviles", horario: "7:00 - 10:00 a.m.", asistenciaDia: false, faltas: "0", salon: "D5", maestro: "Emiliano Lopez", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov"))
-        materias.append(Materia(nombre: "Mercadotecnia", horario: "10:00 - 11:00 a.m.", asistenciaDia: true, faltas: "0", salon: "A15", maestro: "Yuri", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov"))
-        materias.append(Materia(nombre: "Tratamiento de la imagen", horario: "11:00 - 13:00 p.m.", asistenciaDia: false, faltas: "0", salon: "E5", maestro: "Omar Lopez", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov"))
+        materias.append(Materia(nombre: "Programación de Dispositivos Móviles", horario: "7:00 - 10:00 a.m.", asistenciaDia: false, faltas: "0", salon: "D5", maestro: "Emiliano Lopez", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov", evaluado: false))
+        materias.append(Materia(nombre: "Mercadotecnia", horario: "10:00 - 11:00 a.m.", asistenciaDia: false, faltas: "0", salon: "A15", maestro: "Yuri", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov", evaluado: false))
+        materias.append(Materia(nombre: "Tratamiento de la imagen", horario: "11:00 - 13:00 p.m.", asistenciaDia: false, faltas: "0", salon: "E5", maestro: "Omar Lopez", calificacionMaestro: "", comentarioMaestro: "", fecha: "1 de nov", evaluado: false))
         
         //INICIALIAZACION COMIDAS
         comidas.append(Comida(nombre: "Hamburguesa", foto: "hamburguesa", precio: "30.00", rate: "4.5/5"))
@@ -63,7 +63,7 @@ class HorarioController: UIViewController, UITableViewDelegate, UITableViewDataS
         celda?.lblSalon.text = materias[indexPath.row].salon
         
         if (materias[indexPath.row].asistenciaDia == true){
-            celda?.asistencia.tintColor = UIColor(red: 21/255, green: 194/255, blue: 67/255, alpha: 1)
+            celda?.asistencia.tintColor = UIColor(red: 216/255, green: 134/255, blue: 175/255, alpha: 1)
         } else
         {
             celda?.asistencia.tintColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)

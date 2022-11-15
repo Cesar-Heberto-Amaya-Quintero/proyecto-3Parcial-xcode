@@ -16,8 +16,9 @@ class Materia {
     var calificacionMaestro : String
     var comentarioMaestro : String
     var fecha: String
+    var evaluado : Bool
     
-    init(nombre: String, horario: String, asistenciaDia: Bool, faltas: String, salon: String, maestro: String, calificacionMaestro: String, comentarioMaestro: String, fecha: String) {
+    init(nombre: String, horario: String, asistenciaDia: Bool, faltas: String, salon: String, maestro: String, calificacionMaestro: String, comentarioMaestro: String, fecha: String, evaluado: Bool) {
         self.nombre = nombre
         self.horario = horario
         self.asistenciaDia = asistenciaDia
@@ -27,5 +28,6 @@ class Materia {
         self.calificacionMaestro = calificacionMaestro
         self.comentarioMaestro = comentarioMaestro
         self.fecha = fecha
+        self.evaluado = evaluado
     }
 }

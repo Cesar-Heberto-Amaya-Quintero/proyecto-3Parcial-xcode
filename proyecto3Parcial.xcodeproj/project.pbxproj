@@ -17,6 +17,8 @@
 		3DE08FD02911614B0011A7DB /* proyecto3ParcialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FCF2911614B0011A7DB /* proyecto3ParcialUITests.swift */; };
 		3DE08FDF291163E80011A7DB /* HorarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FDE291163E80011A7DB /* HorarioController.swift */; };
 		3DE08FE2291165050011A7DB /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE08FE1291165050011A7DB /* Materia.swift */; };
+		FB7225222923D7B500699DF5 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB7225212923D7B500699DF5 /* Quicksand-Regular.ttf */; };
+		FB7225242923D7C400699DF5 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB7225232923D7C400699DF5 /* Quicksand-Bold.ttf */; };
 		FB724C33291EA03B00865EC6 /* EvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB724C32291EA03B00865EC6 /* EvaluacionController.swift */; };
 		FB724C35291EA26500865EC6 /* CeldaEvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB724C34291EA26500865EC6 /* CeldaEvaluacionController.swift */; };
 		FB74503229199F8B00C31492 /* CeldaComidaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74503129199F8B00C31492 /* CeldaComidaController.swift */; };
@@ -66,6 +68,8 @@
 		3DE08FD12911614B0011A7DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE08FDE291163E80011A7DB /* HorarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioController.swift; sourceTree = "<group>"; };
 		3DE08FE1291165050011A7DB /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		FB7225212923D7B500699DF5 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		FB7225232923D7C400699DF5 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		FB724C32291EA03B00865EC6 /* EvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionController.swift; sourceTree = "<group>"; };
 		FB724C34291EA26500865EC6 /* CeldaEvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaEvaluacionController.swift; sourceTree = "<group>"; };
 		FB74503129199F8B00C31492 /* CeldaComidaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaComidaController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		3DE08FA1291161460011A7DB = {
 			isa = PBXGroup;
 			children = (
+				FB7225212923D7B500699DF5 /* Quicksand-Regular.ttf */,
+				FB7225232923D7C400699DF5 /* Quicksand-Bold.ttf */,
 				3DE08FAC291161470011A7DB /* proyecto3Parcial */,
 				3DE08FC32911614B0011A7DB /* proyecto3ParcialTests */,
 				3DE08FCE2911614B0011A7DB /* proyecto3ParcialUITests */,
@@ -296,6 +302,8 @@
 				3DE08FBA2911614B0011A7DB /* LaunchScreen.storyboard in Resources */,
 				3DE08FB72911614B0011A7DB /* Assets.xcassets in Resources */,
 				3DE08FB5291161470011A7DB /* Main.storyboard in Resources */,
+				FB7225222923D7B500699DF5 /* Quicksand-Regular.ttf in Resources */,
+				FB7225242923D7C400699DF5 /* Quicksand-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
