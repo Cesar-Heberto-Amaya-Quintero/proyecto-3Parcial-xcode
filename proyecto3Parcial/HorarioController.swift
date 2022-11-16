@@ -28,12 +28,12 @@ class HorarioController: UIViewController, UITableViewDelegate, UITableViewDataS
         //INICIALIAZACION COMIDAS
         comidas.append(Comida(nombre: "Hamburguesa", foto: "hamburguesa", precio: "30.00", rate: "4.5/5"))
         comidas.append(Comida(nombre: "Pizza", foto: "pizza", precio: "25.00", rate: "4.8/5"))
-        comidas.append(Comida(nombre: "Sándwich", foto: "pizza", precio: "23.00", rate: "4.3/5"))
-        comidas.append(Comida(nombre: "Sándwich", foto: "pizza", precio: "23.00", rate: "4.3/5"))
-        comidas.append(Comida(nombre: "Sándwich", foto: "pizza", precio: "23.00", rate: "4.3/5"))
-        comidas.append(Comida(nombre: "Sándwich", foto: "pizza", precio: "23.00", rate: "4.3/5"))
-        comidas.append(Comida(nombre: "Sándwich", foto: "pizza", precio: "23.00", rate: "4.3/5"))
-        comidas.append(Comida(nombre: "Sándwich", foto: "pizza", precio: "23.00", rate: "4.3/5"))
+        comidas.append(Comida(nombre: "Sándwich", foto: "sandwich", precio: "23.00", rate: "4.3/5"))
+        comidas.append(Comida(nombre: "Molletes", foto: "molletes", precio: "15.00", rate: "4.0/5"))
+        comidas.append(Comida(nombre: "Burritos", foto: "burrito", precio: "10.00", rate: "4.7/5"))
+        comidas.append(Comida(nombre: "Torta", foto: "torta", precio: "20.00", rate: "4.4/5"))
+        comidas.append(Comida(nombre: "Nachos", foto: "nachos", precio: "33.00", rate: "4.6/5"))
+        comidas.append(Comida(nombre: "Baguette", foto: "baguette", precio: "50.00", rate: "4.7/5"))
         
         //INICIALIAZACION PAGOS
         pagos.append(Pago(semestre: "Agosto - Diciembre 2022", concepto: "Inscripción", referencia: "1991121202207", fechaLimite: "22-Julio-2022", cantidadPagar: "$10,190.00", pagado: true))
