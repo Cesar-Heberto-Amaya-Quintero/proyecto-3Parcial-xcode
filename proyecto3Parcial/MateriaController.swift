@@ -100,7 +100,7 @@ class MateriaController: UIViewController {
         }
         
         if (clase?.comentarioMaestro == "") {
-            txtComentario.text = "No has realizado ningún comentario"
+            //txtComentario.text = "No has realizado ningún comentario"
         }
         
         if (clase?.asistenciaDia == true)
@@ -174,10 +174,16 @@ class MateriaController: UIViewController {
     
     
     @IBAction func doTapEvaluar(_ sender: Any) {
-        clase?.calificacionMaestro = calificacion
-        clase?.comentarioMaestro = txtComentario.text!
-        clase?.evaluado = true
-        callBackAsistencia!(clase!)
-        self.navigationController?.popViewController(animated: true)
+        if (calificacion != "0" && txtComentario.text != ""){
+            clase?.calificacionMaestro = calificacion
+            clase?.comentarioMaestro = txtComentario.text!
+            clase?.evaluado = true
+            callBackEvaluacion!(clase!)
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            lblLeyenda.text = "Llena la encuesta antes de evaluar"
+            lblLeyenda.textColor = UIColor(red: 216/255, green: 0/255, blue: 0/255, alpha: 1)
+        }
+        
     }
 }
